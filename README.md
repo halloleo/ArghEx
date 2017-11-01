@@ -1,7 +1,9 @@
 ArghEx: Extensions for Argh, the "Natural CLI"
 =========
 
-This module contains some extensions to the Python CLI package `[argh][]`. Currently the only extension provided is a command-line parser which collects unknown arguments in a list.
+This module contains some extensions to the Python CLI package
+[`argh`][1]. Currently the only extension provided is a command-line parser
+which collects unknown arguments in a list.
 
 
 ### Installation
@@ -10,14 +12,16 @@ Just use `arghex.py` in your Python project.
 
 ### Parser With Unknown Arguments
 
-`ArghParserWithUnknownArgs` is a class derived from `[ArghParser][]`
+`ArghParserWithUnknownArgs` is a class derived from [`ArghParser`][2]
 and it collects unknown arguments in a list for further
 processing. 
 
-When you instantiate `ArghParserWithUnknownArgs` you give it the name of the variable holding the list of unknown arguments. See the following code snippet:
+When you instantiate `ArghParserWithUnknownArgs` you give it the name of the
+variable holding the list of unknown arguments. See the following code
+snippet:
 
 ```
-def main(my_arg=False, other_args=[]):
+def main(my_arg=42, other_args=[]):
     # use my_arg here
     # and pass other_args through
 
@@ -39,5 +43,5 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-[argh]: https://github.com/neithere/argh
-[ArghParser]: http://argh.readthedocs.io/en/latest/reference.html#argh.helpers.ArghParser
+[1]: https://github.com/neithere/argh
+[2]: http://argh.readthedocs.io/en/latest/reference.html#argh.helpers.ArghParser
